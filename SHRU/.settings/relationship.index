@@ -27,14 +27,6 @@
     "id" : "built-in",
     "version" : "Latest",
     "type" : "context"
-  }, {
-    "id" : "_Er9RAA9JEey_lcraq7w9bw",
-    "version" : "Latest",
-    "type" : "property"
-  }, {
-    "id" : "_Er9RAA9JEey_lcraq7w9bw - metadata",
-    "version" : "Latest",
-    "type" : "schema"
   } ]
 }, {
   "baseItem" : {
