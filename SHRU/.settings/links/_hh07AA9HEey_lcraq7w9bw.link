@@ -19,24 +19,5 @@
       "id" : "_1rvzdQ9DEey_lcraq7w9bw",
       "name" : "Cust_Source_File_RowSeparator"
     } ]
-  }, {
-    "contextName" : "Default",
-    "repoId" : "_gaWgIA9IEey_lcraq7w9bw",
-    "parameterList" : [ {
-      "id" : "_V4M9xQ9NEey_lcraq7w9bw",
-      "name" : "Canada_StateCode_FieldSeparator"
-    }, {
-      "id" : "_V4M9xg9NEey_lcraq7w9bw",
-      "name" : "Canada_StateCode_RowSeparator"
-    }, {
-      "id" : "_V4M9xw9NEey_lcraq7w9bw",
-      "name" : "Canada_StateCode_Header"
-    }, {
-      "id" : "_V4M9yA9NEey_lcraq7w9bw",
-      "name" : "Canada_StateCode_File"
-    }, {
-      "id" : "_V4M9yQ9NEey_lcraq7w9bw",
-      "name" : "Canada_StateCode_Encoding"
-    } ]
   } ]
 }
