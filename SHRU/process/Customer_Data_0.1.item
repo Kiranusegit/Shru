@@ -54,7 +54,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:JGQe89z2pzdto1q/WxyS+Hvi30GSYzOVqX/RijH3"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:DLKYwg7DweJQvQNn1J6rt86ax0S4JUSYfC1vS/NR"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -89,7 +89,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:aalxPq3xgtK50SzZioIq4I/SCxVnBdU4GXWV6q8F"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:ELc+j83kayGAGHPPGkEZrgdYIlStBbmE4Qj5hLqn"/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
@@ -240,17 +240,6 @@
       <column comment="" key="false" length="-1" name="CustAdd_Country" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="CustAdd_Zipcode" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
-    <metadata connector="FLOW" name="OuterJoin">
-      <column comment="" key="false" length="-1" name="CustID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="CustName" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="CustAge" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="CustAdd_Street" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="CustAdd_City" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="CustAdd_State" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="newColumn" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="CustAdd_Country" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="CustAdd_Zipcode" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-    </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
       <uiProperties shellMaximized="true"/>
       <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
@@ -262,17 +251,6 @@
         <mapperTableEntries expression="StringHandling.UPCASE(row1.CustAdd_City ) " name="CustAdd_City" nullable="true" type="id_String"/>
         <mapperTableEntries expression="row1.CustAdd_State" name="CustAdd_State" nullable="true" type="id_String"/>
         <mapperTableEntries expression="row2.StateName " name="newColumn" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row1.CustAdd_Country " name="CustAdd_Country" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row1.CustAdd_Zipcode " name="CustAdd_Zipcode" nullable="true" type="id_String"/>
-      </outputTables>
-      <outputTables activateCondensedTool="true" name="OuterJoin" rejectInnerJoin="true" sizeState="INTERMEDIATE">
-        <mapperTableEntries expression="row1.CustID " name="CustID" nullable="true" type="id_Integer"/>
-        <mapperTableEntries expression="row1.CustName " name="CustName" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row1.CustAge " name="CustAge" nullable="true" type="id_Integer"/>
-        <mapperTableEntries expression="row1.CustAdd_Street " name="CustAdd_Street" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row1.CustAdd_City " name="CustAdd_City" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row1.CustAdd_State " name="CustAdd_State" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row2.StateCode " name="newColumn" nullable="true" type="id_String"/>
         <mapperTableEntries expression="row1.CustAdd_Country " name="CustAdd_Country" nullable="true" type="id_String"/>
         <mapperTableEntries expression="row1.CustAdd_Zipcode " name="CustAdd_Zipcode" nullable="true" type="id_String"/>
       </outputTables>
@@ -433,7 +411,7 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row1"/>
   </connection>
-  <connection connectorName="FLOW" label="CustomerSourceFile" lineStyle="0" metaname="CustomerSourceFile" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tMap_1" target="tLogRow_1">
+  <connection connectorName="FLOW" label="CustomerSourceFile" lineStyle="0" metaname="CustomerSourceFile" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tLogRow_1">
     <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
       <elementValue elementRef="TRACE_COLUMN" value="newColumn"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
@@ -441,10 +419,6 @@
     </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="CustomerSourceFile"/>
-  </connection>
-  <connection connectorName="FLOW" label="OuterJoin" lineStyle="0" metaname="OuterJoin" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tMap_1" target="tLogRow_2">
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OuterJoin"/>
   </connection>
   <connection connectorName="FLOW" label="row2" lineStyle="8" metaname="tFileInputDelimited_2" offsetLabelX="0" offsetLabelY="0" source="tFileInputDelimited_2" target="tMap_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
@@ -455,13 +429,18 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_2500c96e-971b-4ba1-a740-d8c9750042aa"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>e7lT69P1S7DxdN7antlXzavUnd935Lm56y9YyCbI2aQHn+UfaO6bZz+4wEkW1GTTKhqlRC1XwLeX&#13;
-PmSaKtIdMA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_2529a1d3-0496-4625-9cfe-c00ac79cc3d9"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>FP2nYVk2gv17jOntwMj+YS8+rppoeby2SvrcvBnRiAl6Fug07EuWLgFlW7SM30hxK71vOv4xpgLG&#13;
-Jm1r48ixww==</DigestValue></Reference></SignedInfo><SignatureValue>Xr2iMrZeY9SYK/Ik+0JCJwQB+GDVum9HZNhe/epWrwE0qT/n7tk54kMyxCll6rzC9lNPDCHoL0Ka&#13;
-DJ2LSAYfz62YAhM8ZX9WghMFSelEMd1ehOityoPDVfW/Ac9IUuM736Io5XfY6Nu4o5OTK1NFiimv&#13;
-s18qzy8YP+OnDI2AujcwbyQTLdqczQjucviWyOJi0CMVdYbcdiuAIfjqRzmWs35dr8NSMEfCRJwH&#13;
-eMy1t/xhtP3NnMp+jlrNKwPYT3WU+OWj20oEgv2RcQwXWiAGeHpxqRrBm2inUa+aGGL3jsnvO+79&#13;
-qmpKRHPhmf9pMti0cuk/aDg957dvvxcM6DXrbQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLogRow_2"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_e37c55b6-58d6-4fbe-a779-f9dac0edffe7"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>eVKdGFyn+VHF4E+F8Jb6oNI1umkuH+PdWpZGIchiOIgIX9clvGVbtlag+RaN0Rgv1yGMAeyuH8UC&#13;
+vEStNiXiBw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_3cb0670a-ac63-4ea3-ac0d-646377ada2a5"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>zND2vkEXbHmoOCiOWb9y4jamsNJ9QNBQv9hHmVDvm3HY6k9ZgY8mzg8eBUt6Wv6aGl3Prn9qLuxG&#13;
+rp8YWlO3mg==</DigestValue></Reference></SignedInfo><SignatureValue>McNF0IDGob4O1EkYVlrPFyetpfczdl2nQNwxQ4Nd3fUyfoOq04iicZG4/llwm68PHxXs6lypNnYN&#13;
+sxkVjX84GCIKPo+AUd2a6sEM/4uFdG4T56kothKZKpRC6mpYD0a9zfjvlwPoYqWMs/5UvbgIpBRn&#13;
+6DR8IxRPpqzGrqfOT8gnaAq5lTrJEZbKKO6v4XhlKFc8cWERvzyOjazRwn3CjtS7ITaJ/0KV7hlY&#13;
+1N8X0eiM3fiHzu2V8PZVVwio98QaIAMDdPygz5bqQgdWmoKl+sDJG3BJVVy4vtzOYgDjzUdtDnv7&#13;
+eOl/jExezMFCAxXpjh0nygSGMi/0MIODvdWm2Q==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -483,4 +462,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_2529a1d3-0496-4625-9cfe-c00ac79cc3d9" Target="#_2500c96e-971b-4ba1-a740-d8c9750042aa"><Timestamp>2021-09-06 20:40:59</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_3cb0670a-ac63-4ea3-ac0d-646377ada2a5" Target="#_e37c55b6-58d6-4fbe-a779-f9dac0edffe7"><Timestamp>2021-09-06 20:41:31</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
