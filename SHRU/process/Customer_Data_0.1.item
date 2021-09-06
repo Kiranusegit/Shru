@@ -13,7 +13,7 @@
     <contextParameter comment="" internalId="_YlowMA9UEey_lcraq7w9bw" name="MySQL_Port" prompt="MySQL_Port?" promptNeeded="false" repositoryContextId="_eZ7dUA9EEey_lcraq7w9bw" type="id_String" value="3306"/>
     <contextParameter comment="" internalId="_YlowMQ9UEey_lcraq7w9bw" name="MySQL_Login" prompt="MySQL_Login?" promptNeeded="false" repositoryContextId="_eZ7dUA9EEey_lcraq7w9bw" type="id_String" value="root"/>
     <contextParameter comment="" internalId="_YlowMg9UEey_lcraq7w9bw" name="MySQL_Database" prompt="MySQL_Database?" promptNeeded="false" repositoryContextId="_eZ7dUA9EEey_lcraq7w9bw" type="id_String" value="test"/>
-    <contextParameter comment="" internalId="_YlowMw9UEey_lcraq7w9bw" name="MySQL_Password" prompt="MySQL_Password?" promptNeeded="false" repositoryContextId="_eZ7dUA9EEey_lcraq7w9bw" type="id_Password" value="enc:system.encryption.key.v1:iCeCNSyQcQYERM3snYX8+EZJNtcA6tk+fO87++8u4GI="/>
+    <contextParameter comment="" internalId="_YlowMw9UEey_lcraq7w9bw" name="MySQL_Password" prompt="MySQL_Password?" promptNeeded="false" repositoryContextId="_eZ7dUA9EEey_lcraq7w9bw" type="id_Password" value="enc:system.encryption.key.v1:8Ub1RzSTrY75TZ7Sv9CDEQR1QIcWRaLaYQyWbzdhTyU="/>
     <contextParameter comment="" internalId="_YlowNA9UEey_lcraq7w9bw" name="MySQL_AdditionalParams" prompt="MySQL_AdditionalParams?" promptNeeded="false" repositoryContextId="_eZ7dUA9EEey_lcraq7w9bw" type="id_String" value="noDatetimeStringSync=true"/>
     <contextParameter comment="" internalId="_YlowNQ9UEey_lcraq7w9bw" name="MySQL_Server" prompt="MySQL_Server?" promptNeeded="false" repositoryContextId="_eZ7dUA9EEey_lcraq7w9bw" type="id_String" value="localhost"/>
   </context>
@@ -60,7 +60,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:NNhjo53cbW2XpCDzDfy+k8onEEumj++rIPJ9ArS/"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:dN/82s7k1eEGpsLW5cEu7vmY6MlFtWpDBzntbaj1"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -95,7 +95,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:14MVSDjwb2SjJ/SXtB5ZNl3hgI40VgeOTEkIEYEx"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:OAb2L6Sfd93O6ipu9S8g0xg7k7cxEORGFjS6hFNQ"/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
@@ -237,7 +237,7 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="CustomerFile" name="CustomerSourceFile">
       <column comment="" key="false" length="-1" name="CustID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="CustName" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="CustName" nullable="true" originalLength="20" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="CustAge" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="CustAdd_Street" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="CustAdd_City" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
@@ -361,7 +361,7 @@
     <elementParameter field="TEXT" name="PORT" value="context.MySQL_Port"/>
     <elementParameter field="TEXT" name="DBNAME" value="context.MySQL_Database"/>
     <elementParameter field="TEXT" name="USER" value="context.MySQL_Login"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:5GV2D+byNPgXuVEOOzjsXxHtdsIMtB5cZPWQH1EgfkTZMoqVdlE1NPPTOiyd53VwdBY="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:jUX4JAJxhk8JcBmmpW5m7rPbJXsEl4icDXvCp3m7DYZpFAh6IWYnGUoqMILiJFzO/EM="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;CustSourceTable&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="DROP_IF_EXISTS_AND_CREATE"/>
     <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
@@ -433,7 +433,7 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="CustomerFile" name="tDBOutput_1">
       <column comment="" key="false" length="-1" name="CustID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="CustName" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="CustName" nullable="true" originalLength="20" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="CustAge" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="CustAdd_Street" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="CustAdd_City" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
@@ -443,7 +443,7 @@
     </metadata>
     <metadata connector="REJECT" label="CustomerFile" name="REJECT">
       <column comment="" key="false" length="-1" name="CustID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="CustName" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="CustName" nullable="true" originalLength="20" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="CustAge" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="CustAdd_Street" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="CustAdd_City" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
@@ -467,7 +467,7 @@
     <elementParameter field="TEXT" name="PORT" value="context.MySQL_Port"/>
     <elementParameter field="TEXT" name="DBNAME" value="context.MySQL_Database"/>
     <elementParameter field="TEXT" name="USER" value="context.MySQL_Login"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:YKvvuubBb08sLPAR8yMGwtGEHGOkNWAHnP/E5HbqD2E0eFsXOJ8LLawBMnhfYqQa+qw="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:wS4D3JqibxNMOSSiw7GCm6grpchtDdDgrMNIKGEsN/jvZRlCyV6kEb+OXSP8hdd9C+0="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;CustSourceTable&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
     <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="UPDATE"/>
@@ -595,13 +595,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_71ecd16c-a051-404b-b76a-5a1266d5b0f7"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>ahGUpuKAnPPBPG1dSTTGJxsxF9od/U1MfBIScq7vo9VqPApCEVx+rkyX5hfhRDYDOchooMgn4ZqD&#13;
-0hZAHlzcmA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_d6d823d7-1511-4a7f-84ea-a2fa6c3c27b9"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>OjSfobwUeybPO3NwZEFPRMryvSvGCgHnqPldazlkUvKQ1Ja4aBOqtc1weqBNTZAgq5GKWUMG8sKR&#13;
-vOamwn6MGg==</DigestValue></Reference></SignedInfo><SignatureValue>lIEbUmEespdAXqsvUHhILnZ4XSfj2lv4WzQCCM26TM6meYEZQzuZlT6Q0ky3IUvEy1MBAlgDxHLR&#13;
-qV4DIaWyTL/UyLb/ElII/OnZS9KXKffJG2nltYllG2KX/cY6ALc3BRBVYU2ts4aKxsS6QKjvZORf&#13;
-3/yGUrgGhhwGz2Q/5upH9qOZLjAxQNMeM/zJRk3iJHlCd0y/TfK865LY1ilCEKahrOf3JEhA+Zb5&#13;
-omA1/qyqrfompU0UQpeGRIiZDUoYTWcTkL1OgPKmiHQEsTeaXy1lnQYg41Hm7/cEgXTo3I/vNB43&#13;
-DdvLzjeVr/+3u4fpifCeV9LLvk6E2z1MjXsxOg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_179033d9-3d70-4bf8-a693-f360e3fbd65c"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>74CVYl0VGVl9Ap0XDNuMUBDrYXBBQ6FOToHf031IM26A2D19VJVGs8M7RrpNdEWkMyNokGBuOkLX&#13;
+NPYT8v8whg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_c1a946b5-4b79-4a51-a337-7fe3a0cb6640"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>0WMJqW+cBdeYIekfNEv5elNcouWQrimi5rnxGQp960MGG+1Nw5JT4PWpvpEwoMNVO5K+wWw0LefY&#13;
+sZDqv7TugA==</DigestValue></Reference></SignedInfo><SignatureValue>R0gDP18w8TfwkAuGxce9DFlTT4d2qJzMcDWCBtGWclTJvXO/aAYgw+NE90aEP+KZXADHpIavr/+8&#13;
+aQgfcZcRK6LeElYQGSJJocAoiHw0UJ45c+g6K7IsczwT0ojJos7QEISJJvGaqL+09UE4FCvcCc+g&#13;
+u46yO/MOrPDuiMWNPSHFBFtmGo86f8g2KseGVmECv5wVBIeoMV6qykx8J0GTr7TTWut0z1RGv7V0&#13;
+AAAkEvkBNOoUf7Z+MWbmwRg+Kk1uJ41rKbxj+FPus4b0KyRN93uziLscLufKpaH7/8zE78Um5WSk&#13;
+18aGVL3kuoKs/18Bbz2jWxnNv7fwK1oLvCFH4g==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -623,4 +623,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_d6d823d7-1511-4a7f-84ea-a2fa6c3c27b9" Target="#_71ecd16c-a051-404b-b76a-5a1266d5b0f7"><Timestamp>2021-09-06 20:53:35</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_c1a946b5-4b79-4a51-a337-7fe3a0cb6640" Target="#_179033d9-3d70-4bf8-a693-f360e3fbd65c"><Timestamp>2021-09-06 20:54:01</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
