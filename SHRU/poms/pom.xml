@@ -13,6 +13,7 @@
     <module>jobs/process/customer_data_0.1</module>
     <module>jobs/process/customer_file_0.1</module>
     <module>jobs/process/customeraddress_0.1</module>
+    <module>jobs/process/mastercustomeradd_0.1</module>
   </modules>
   <properties>
     <talend.project.name>SHRU</talend.project.name>
