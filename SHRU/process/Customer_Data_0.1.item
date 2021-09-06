@@ -54,7 +54,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:PazE0uGmervLhuRU2Mi2jsvMzvbq0VWYE58+2wcK"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:0FtYoh+3qoaju+RQiizS5Ai+XJH4StiXyQT4qm/q"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -89,7 +89,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:LQdkfU2SN2QSbY0yJj+VXBZNKDmAwQX24oMS0Yja"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:pUx/57eS2yAA5QY5DFyRKkIE/HzbMdW0nQyrtEMa"/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
@@ -235,8 +235,8 @@
       <column comment="" key="false" length="-1" name="CustAge" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="CustAdd_Street" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="CustAdd_City" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="CustAdd_StateCode" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="CustAdd_State" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CustAdd_StateName" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CuslltAdd_StateCode" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="CustAdd_Country" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="CustAdd_Zipcode" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
@@ -260,8 +260,8 @@
         <mapperTableEntries expression="row1.CustAge " name="CustAge" nullable="true" type="id_Integer"/>
         <mapperTableEntries expression="StringHandling.UPCASE(row1.CustAdd_Street ) " name="CustAdd_Street" nullable="true" type="id_String"/>
         <mapperTableEntries expression="StringHandling.UPCASE(row1.CustAdd_City ) " name="CustAdd_City" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row2.StateName " name="CustAdd_StateCode" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row1.CustAdd_State" name="CustAdd_State" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.StateName " name="CustAdd_StateName" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.CustAdd_State" name="CuslltAdd_StateCode" nullable="true" type="id_String"/>
         <mapperTableEntries expression="row1.CustAdd_Country " name="CustAdd_Country" nullable="true" type="id_String"/>
         <mapperTableEntries expression="row1.CustAdd_Zipcode " name="CustAdd_Zipcode" nullable="true" type="id_String"/>
       </outputTables>
@@ -316,9 +316,9 @@
       <elementValue elementRef="LENGTH" value="10"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="CustAdd_City"/>
       <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CustAdd_StateCode"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CustAdd_StateName"/>
       <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CustAdd_State"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CuslltAdd_StateCode"/>
       <elementValue elementRef="LENGTH" value="10"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="CustAdd_Country"/>
       <elementValue elementRef="LENGTH" value="10"/>
@@ -334,8 +334,8 @@
       <column comment="" key="false" length="-1" name="CustAge" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="CustAdd_Street" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="CustAdd_City" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="CustAdd_StateCode" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="CustAdd_State" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CustAdd_StateName" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CuslltAdd_StateCode" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="CustAdd_Country" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="CustAdd_Zipcode" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
@@ -452,6 +452,12 @@
       <elementValue elementRef="TRACE_COLUMN" value="CustAdd_StateCode"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CustAdd_StateName"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CuslltAdd_StateCode"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
     </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="CustomerSourceFile"/>
@@ -477,13 +483,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_ba18b30d-d6c0-4090-92ea-01da317cc48b"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>tfmk4UoqQFhiWgZu2JVpH2o7t0V9OuD+iLIAqRILvNfoNnYvKCjP4NnNi3WznjBV3bgaBTVY84xv&#13;
-FvXFmbrIsA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_895f1575-297d-4394-9db5-8ae851500d21"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>TH8oMUyxY29c7WA2F3L43EpsYEbPUTR0Zryd3UAVsGIFanjyfjVUnkXyoHl1P8DqzNNcOsVrqo4G&#13;
-S8n5+r+wIQ==</DigestValue></Reference></SignedInfo><SignatureValue>KXR+ZazYmrTqjcHStXCoRx+R6q24fLYgfrwm0O5FMhqYkbvQlmAbsToEOezK47v7HaPdYFIBGzkt&#13;
-sIQQl8T2iI4ZTvg/8o7GmfkAQNLTqrnSVCj9NfHJAJ1hW/ZssWZWu/5ImDR1ra0MfG3ZenpmRdVc&#13;
-rdG+bVogN2DQc/2OiOMBNs4Guk+Xf1BgpAO8qGhpeQQkpy2G7gj4mQrRvL4nzy9crXoSQsQ3OcTE&#13;
-qEy8K9TkreBNaztESC36q6YcSnvtbBFpkanvYjlHuBvufDTFfuDPo5/RJ/SnTgM7iiKfygblEIjB&#13;
-HclYJ3NSGGQe3X7UlyIjBOg98Nt2hx5xo7cWfg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_d130982a-e1f3-4107-b88d-a789d9b0c9da"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>TcCc9kQFBtDnvntoncVwkzdqIKf3mmU7KYllkASrflV3yLamOzebEVJwBPY50CF5/RALu51AO1VX&#13;
+1ILtdNUGmQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_9dd5e81a-638d-4ef8-ba66-1722abedb446"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>n893KAXNh4pax+4SFa/G6Tkv1sWnx5aI4PBsccRTm3MoppArTB26EwjvLSrZDKHySgqJEnbAFzly&#13;
+LuDTGxpi1A==</DigestValue></Reference></SignedInfo><SignatureValue>OPIhcs41/ipelCPte9O0FTNBd3quZGucjemDE0vL741hmzEYrddTJlcArRRkG7MZMRzOOlxCF/2n&#13;
+nlo9fcaAtWw/P43DTN2bE5JammN0+zYF5jxbSA6UgYTMF0rOHIAhgGNRRXFwZyt2P+pgYzOUAUfz&#13;
+RJtFMaSl5hRGl91uf//ALpbN8nondnVF78mAT3IxBK9RbaAjFRRcH/PxypdVei44u+ospQ5jlPt1&#13;
+1Y5jE1hhccV5YecMKmyeF4Ndv0hOHka+nUUJKgp/0ZcS+gI3ffYXmPmCG6wbgH96MnPkeHC59jQC&#13;
+l9pOUjKHpLnnuGnTeuNevZP5KGosjNbfdKoVVw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -505,4 +511,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_895f1575-297d-4394-9db5-8ae851500d21" Target="#_ba18b30d-d6c0-4090-92ea-01da317cc48b"><Timestamp>2021-09-06 20:46:34</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_9dd5e81a-638d-4ef8-ba66-1722abedb446" Target="#_d130982a-e1f3-4107-b88d-a789d9b0c9da"><Timestamp>2021-09-06 20:47:58</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
