@@ -1542,6 +1542,11 @@
     "version" : "5.1.2",
     "status" : "noimpact"
   }, {
+    "id" : "org.talend.repository.model.migration.RenameConnectionName4tSQSOutput",
+    "breaks" : "7.3.0",
+    "version" : "7.3.1",
+    "status" : "ok"
+  }, {
     "id" : "org.talend.repository.model.migration.RenameConnectionNameofSalesforceOutput",
     "breaks" : "5.1.1",
     "version" : "5.1.2",
@@ -1920,6 +1925,11 @@
     "breaks" : "6.1.0",
     "version" : "6.1.1",
     "status" : "noimpact"
+  }, {
+    "id" : "org.talend.repository.model.migration.UncheckBson2JsonTask",
+    "breaks" : "7.3.0",
+    "version" : "7.3.1",
+    "status" : "ok"
   }, {
     "id" : "org.talend.repository.model.migration.UncheckExceptionOnFileExistMigrationTask",
     "breaks" : "6.3.1",
