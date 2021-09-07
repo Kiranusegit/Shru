@@ -12,7 +12,7 @@
     <module>code/routines</module>
     <module>jobs/process/Custmaster/customer_data_0.1</module>
     <module>jobs/process/Custmaster/customer_file_0.1</module>
-    <module>jobs/process/customeraddress_0.1</module>
+    <module>jobs/process/Custmaster/customeraddress_0.1</module>
     <module>jobs/process/mastercustomeradd_0.1</module>
   </modules>
   <properties>
