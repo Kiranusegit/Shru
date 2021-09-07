@@ -15,6 +15,7 @@
     <module>jobs/process/Custmaster/customeraddress_0.1</module>
     <module>jobs/process/Custmaster/mastercustomeradd_0.1</module>
     <module>jobs/process/amc_0.1</module>
+    <module>jobs/process/debug_0.1</module>
   </modules>
   <properties>
     <signer.version>7.3.1</signer.version>
