@@ -20,9 +20,17 @@
     "type" : "job"
   },
   "relatedItems" : [ {
+    "id" : "_eZ7dUA9EEey_lcraq7w9bw",
+    "version" : "Latest",
+    "type" : "context"
+  }, {
     "id" : "built-in",
     "version" : "Latest",
     "type" : "context"
+  }, {
+    "id" : "__rdk4A9DEey_lcraq7w9bw",
+    "version" : "Latest",
+    "type" : "property"
   } ]
 }, {
   "baseItem" : {
